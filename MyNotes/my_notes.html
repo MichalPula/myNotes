@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>MyNotes</title>
+    <script src="my_notes.js" defer></script>
+    <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js" defer></script>
+    <link rel="stylesheet" href="my_notes.css">
+</head>
+<body>
+
+<div id="content">
+    <div id="clippy">
+        <img src="clippy.png" ondblclick="addNote()">
+        <p id="question">Double click on me <br> to create new note.</p>
+    </div>
+
+    <template id="noteTemplate">
+        <div class="note">
+            <input type="text" class="noteTitle" placeholder="Give me a title!"><button type="button" class="deleteButton" onclick="deleteNote(this.parentNode)">&#10006;</button>
+            <textarea class="noteBody"></textarea>
+        </div>
+    </template>
+
+
+
+
+
+
+
+</div>
+
+
+</body>
+</html>
